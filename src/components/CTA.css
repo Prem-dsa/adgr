@@ -1,0 +1,199 @@
+/* ============================================
+   CTA Component - Modern Medical Premium
+   ============================================ */
+.cta {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-black) 100%);
+}
+
+/* Background */
+.cta__background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.cta__bg-gradient {
+    display: none;
+}
+
+.cta__bg-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        radial-gradient(circle at 1px 1px, rgba(13, 115, 119, 0.06) 1px, transparent 0);
+    background-size: 32px 32px;
+}
+
+.cta__bg-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse at center, rgba(13, 115, 119, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Wrapper */
+.cta__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-12);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Content */
+.cta__content {
+    max-width: 480px;
+}
+
+.cta__eyebrow {
+    color: var(--color-primary-light) !important;
+    padding: var(--space-2) var(--space-4);
+    background: rgba(13, 115, 119, 0.2);
+    border-radius: var(--radius-full);
+    display: inline-block;
+    margin-bottom: var(--space-4);
+}
+
+.cta__eyebrow::before,
+.cta__eyebrow::after {
+    display: none !important;
+}
+
+.cta__title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.cta__title em {
+    font-style: normal;
+    color: var(--color-primary-light);
+    background: none;
+    -webkit-text-fill-color: var(--color-primary-light);
+}
+
+.cta__description {
+    font-size: var(--text-base);
+    color: var(--color-silver);
+    line-height: 1.7;
+    margin-bottom: var(--space-6);
+}
+
+.cta__buttons {
+    display: flex;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+}
+
+.cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+/* Cards */
+.cta__cards {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.cta__card {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.cta__card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(13, 115, 119, 0.3);
+    transform: translateY(-4px);
+}
+
+.cta__card-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--color-primary);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+    color: var(--color-white);
+}
+
+.cta__card-title {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--space-2);
+}
+
+.cta__card-text {
+    font-size: var(--text-sm);
+    color: var(--color-silver);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .cta__wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--space-10);
+    }
+
+    .cta__content {
+        max-width: 100%;
+    }
+
+    .cta__buttons {
+        justify-content: center;
+    }
+
+    .cta__cards {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+    }
+}
+
+@media (max-width: 640px) {
+    .cta__title {
+        font-size: var(--text-2xl);
+    }
+
+    .cta__buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta__btn {
+        justify-content: center;
+    }
+
+    .cta__cards {
+        grid-template-columns: 1fr;
+    }
+
+    .cta__card {
+        text-align: center;
+    }
+
+    .cta__card-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

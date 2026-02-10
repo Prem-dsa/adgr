@@ -1,0 +1,263 @@
+/* ============================================
+   Services Component - Modern Medical Premium
+   ============================================ */
+.services {
+    background: var(--color-white);
+    padding: var(--space-24) 0;
+}
+
+/* Category Sections */
+.services__category {
+    margin-bottom: var(--space-20);
+}
+
+.services__category:last-child {
+    margin-bottom: 0;
+}
+
+/* Header */
+.services__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: var(--space-10);
+    gap: var(--space-8);
+}
+
+.services__header-content {
+    max-width: 600px;
+}
+
+.services__title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+}
+
+.services__title em {
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+.services__subtitle {
+    font-size: var(--text-base);
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.services__header-cta {
+    flex-shrink: 0;
+}
+
+/* Divider */
+.services__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--space-16) 0;
+}
+
+.services__divider-text {
+    font-size: var(--text-lg);
+    color: var(--color-primary);
+}
+
+/* Grid */
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+/* Service Card */
+.services__card {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-light);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.5s var(--ease-out);
+
+    /* Initial state - hidden */
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Visible state after scroll trigger */
+.services__card--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.services__card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+/* Card Image */
+.services__card-image {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+.services__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease-out);
+}
+
+.services__card:hover .services__card-image img {
+    transform: scale(1.05);
+}
+
+.services__card-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.5) 100%);
+    pointer-events: none;
+    transition: opacity 0.4s var(--ease-out);
+}
+
+.services__card:hover .services__card-image-overlay {
+    opacity: 0.8;
+}
+
+/* Card Content */
+.services__card-content {
+    padding: var(--space-5);
+}
+
+.services__card-subtitle {
+    display: inline-block;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-sm);
+    transition: all 0.3s var(--ease-out);
+}
+
+.services__card:hover .services__card-subtitle {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
+}
+
+.services__card-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-2);
+}
+
+.services__card-description {
+    font-size: 0.875rem;
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: var(--space-4);
+}
+
+/* Treatment Tags */
+.services__card-treatments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+}
+
+.services__card-tag {
+    padding: var(--space-1) var(--space-3);
+    background: var(--color-pearl);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    color: var(--color-slate);
+    transition: all var(--duration-fast) var(--ease-out);
+}
+
+.services__card:hover .services__card-tag {
+    background: var(--color-primary-subtle);
+    color: var(--color-primary-dark);
+}
+
+/* Card Link */
+.services__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.services__card-link svg {
+    transition: transform var(--duration-base) var(--ease-out);
+}
+
+.services__card-link:hover {
+    color: var(--color-primary-dark);
+}
+
+.services__card-link:hover svg {
+    transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .services__header {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: var(--space-16) 0;
+    }
+
+    .services__category {
+        margin-bottom: var(--space-12);
+    }
+
+    .services__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+
+    .services__card-image {
+        height: 220px;
+    }
+
+    .services__divider {
+        margin: var(--space-10) 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .services__title {
+        font-size: var(--text-2xl);
+    }
+
+    .services__card-content {
+        padding: var(--space-4);
+    }
+}

@@ -1,0 +1,212 @@
+/* ============================================
+   FAQ Component - Modern Medical Premium
+   ============================================ */
+.faq {
+    background: var(--color-white);
+}
+
+.faq__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: var(--space-12);
+    align-items: start;
+}
+
+/* Content Side */
+.faq__content {
+    position: sticky;
+    top: 120px;
+}
+
+.faq__title {
+    font-family: var(--font-display);
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-4);
+}
+
+.faq__title em {
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+.faq__subtitle {
+    font-size: var(--text-base);
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin-bottom: var(--space-8);
+}
+
+.faq__contact {
+    padding: var(--space-6);
+    background: var(--color-primary-subtle);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(13, 115, 119, 0.1);
+}
+
+.faq__contact-text {
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3);
+}
+
+/* FAQ List */
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.faq__item {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--duration-base) var(--ease-out);
+    border: 1px solid var(--color-light);
+}
+
+.faq__item:hover {
+    border-color: var(--color-muted);
+}
+
+.faq__item--open {
+    box-shadow: var(--shadow-medium);
+    border-color: var(--color-primary);
+}
+
+.faq__question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.faq__question-number {
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.faq__question-text {
+    flex: 1;
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    transition: color var(--duration-base) var(--ease-out);
+}
+
+.faq__item--open .faq__question-text {
+    color: var(--color-primary);
+}
+
+/* Custom Plus/Minus Icon */
+.faq__icon {
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius);
+    background: var(--color-pearl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.faq__item--open .faq__icon {
+    background: var(--color-primary);
+}
+
+.faq__icon-line {
+    position: absolute;
+    background: var(--color-slate);
+    transition: all var(--duration-base) var(--ease-out);
+}
+
+.faq__item--open .faq__icon-line {
+    background: var(--color-white);
+}
+
+.faq__icon-line--h {
+    width: 12px;
+    height: 2px;
+}
+
+.faq__icon-line--v {
+    width: 2px;
+    height: 12px;
+}
+
+.faq__item--open .faq__icon-line--v {
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+/* Answer */
+.faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease-out);
+}
+
+.faq__item--open .faq__answer {
+    max-height: 300px;
+}
+
+.faq__answer p {
+    padding: 0 var(--space-5) var(--space-5);
+    padding-left: calc(var(--space-5) + var(--space-4) + 2ch);
+    font-size: var(--text-sm);
+    color: var(--color-gray);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .faq__wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .faq__content {
+        position: static;
+        text-align: center;
+    }
+
+    .faq__contact {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .faq__title {
+        font-size: var(--text-2xl);
+    }
+
+    .faq__question {
+        padding: var(--space-4);
+        gap: var(--space-3);
+    }
+
+    .faq__question-text {
+        font-size: var(--text-sm);
+    }
+
+    .faq__answer p {
+        padding: 0 var(--space-4) var(--space-4);
+        padding-left: var(--space-4);
+        font-size: var(--text-sm);
+    }
+}
