@@ -7,14 +7,14 @@
 }
 
 .footer__top {
-    padding: var(--space-10) 0 var(--space-12);
+    padding: var(--space-16) 0 var(--space-16);
 }
 
 /* Grid */
 .footer__grid {
     display: grid;
     grid-template-columns: 1.5fr repeat(3, 1fr);
-    gap: var(--space-10);
+    gap: var(--space-12);
 }
 
 /* Brand Section */

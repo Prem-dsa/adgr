@@ -9,24 +9,11 @@
    CSS Custom Properties (Design Tokens)
    ============================================ */
 :root {
-  /* Primary Accent - Medical Teal */
-  --color-primary: #0d7377;
-  --color-primary-light: #14a3a8;
-  --color-primary-dark: #095c5f;
-  --color-primary-subtle: #e6f4f4;
-
-  /* Secondary Accent - Soft Blue */
-  --color-secondary: #2563eb;
-  --color-secondary-light: #60a5fa;
-  --color-secondary-dark: #1d4ed8;
-
-  /* Success / Wellness Green */
-  --color-success: #10b981;
-  --color-success-light: #d1fae5;
-
-  /* Warm Accent */
-  --color-warm: #f59e0b;
-  --color-warm-light: #fef3c7;
+  /* Primary Accent - Brand Dark Red */
+  --color-primary: #B91C1C;
+  --color-primary-light: #DC2626;
+  --color-primary-dark: #991B1B;
+  --color-primary-subtle: #FEF2F2;
 
   /* Neutrals - Clean & Clinical */
   --color-black: #0f172a;
@@ -44,6 +31,13 @@
   --color-gold: var(--color-primary);
   --color-gold-light: var(--color-primary-light);
   --color-gold-dark: var(--color-primary-dark);
+  --color-secondary: var(--color-charcoal);
+  --color-secondary-light: var(--color-slate);
+  --color-secondary-dark: var(--color-black);
+  --color-success: var(--color-primary);
+  --color-success-light: var(--color-primary-subtle);
+  --color-warm: var(--color-primary);
+  --color-warm-light: var(--color-primary-subtle);
 
   /* Typography */
   --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
@@ -77,14 +71,14 @@
   --space-32: 8rem;
 
   /* Modern Shadows - Soft & Clinical */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
-  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
-  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-  --shadow-glow: 0 0 40px rgba(13, 115, 119, 0.15);
-  --shadow-primary: 0 4px 14px rgba(13, 115, 119, 0.25);
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  --shadow-medium: 0 8px 30px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.07), 0 6px 12px rgba(0, 0, 0, 0.03);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 50px rgba(185, 28, 28, 0.12);
+  --shadow-primary: 0 4px 16px rgba(185, 28, 28, 0.25);
 
   /* Border Radius - Modern Rounded */
   --radius-sm: 6px;
@@ -129,7 +123,7 @@ body {
   font-family: var(--font-body);
   font-size: var(--text-base);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--color-slate);
   background-color: var(--color-white);
   overflow-x: hidden;
@@ -173,10 +167,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
-  font-weight: 500;
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 1.15;
   color: var(--color-charcoal);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
 
 h1 {
@@ -262,7 +256,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  padding: var(--space-3) var(--space-6);
+  padding: 14px 28px;
   font-family: var(--font-body);
   font-size: var(--text-sm);
   font-weight: 600;
@@ -300,7 +294,7 @@ p {
 .btn-primary:hover {
   background: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(13, 115, 119, 0.35);
+  box-shadow: 0 6px 20px rgba(185, 28, 28, 0.3);
 }
 
 .btn-secondary {
@@ -348,7 +342,7 @@ p {
 }
 
 .btn-lg {
-  padding: var(--space-4) var(--space-8);
+  padding: 18px 36px;
   font-size: var(--text-base);
   border-radius: var(--radius-xl);
 }
@@ -362,8 +356,8 @@ p {
   overflow: hidden;
   transition: all var(--duration-base) var(--ease-out);
   position: relative;
-  border: 1px solid var(--color-light);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: var(--shadow-soft);
 }
 
 .card:hover {
@@ -376,7 +370,7 @@ p {
    Section Styles
    ============================================ */
 .section {
-  padding: var(--space-32) 0;
+  padding: 9rem 0;
   position: relative;
 }
 
@@ -399,7 +393,7 @@ p {
 .section-header {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto var(--space-16);
+  margin: 0 auto var(--space-20);
 }
 
 .section-eyebrow {
@@ -696,17 +690,17 @@ p {
    ============================================ */
 @media (max-width: 1200px) {
   .section {
-    padding: var(--space-24) 0;
+    padding: 7rem 0;
   }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: var(--space-16) 0;
+    padding: 5rem 0;
   }
 
   .section-header {
-    margin-bottom: var(--space-10);
+    margin-bottom: var(--space-12);
   }
 }
 

@@ -22,7 +22,7 @@
     position: absolute;
     inset: 0;
     background-image:
-        radial-gradient(circle at 1px 1px, rgba(13, 115, 119, 0.06) 1px, transparent 0);
+        radial-gradient(circle at 1px 1px, rgba(185, 28, 28, 0.06) 1px, transparent 0);
     background-size: 32px 32px;
 }
 
@@ -33,7 +33,7 @@
     transform: translate(-50%, -50%);
     width: 600px;
     height: 400px;
-    background: radial-gradient(ellipse at center, rgba(13, 115, 119, 0.1) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(185, 28, 28, 0.1) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -55,7 +55,7 @@
 .cta__eyebrow {
     color: var(--color-primary-light) !important;
     padding: var(--space-2) var(--space-4);
-    background: rgba(13, 115, 119, 0.2);
+    background: rgba(185, 28, 28, 0.2);
     border-radius: var(--radius-full);
     display: inline-block;
     margin-bottom: var(--space-4);
@@ -110,20 +110,20 @@
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: var(--radius-xl);
-    padding: var(--space-6);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-8);
     transition: all var(--duration-base) var(--ease-out);
 }
 
 .cta__card:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(13, 115, 119, 0.3);
+    border-color: rgba(185, 28, 28, 0.3);
     transform: translateY(-4px);
 }
 
 .cta__card-icon {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     background: var(--color-primary);
     border-radius: var(--radius-lg);
     display: flex;

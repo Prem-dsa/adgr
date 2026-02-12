@@ -1,8 +1,30 @@
+import oxygenLaserTherapyImg from '../assets/Oxygen-Laser-Therapy.png';
+import hydrafacial2Img from '../assets/Hydrafacial-2.png';
+import nanoFueImg from '../assets/NANO-FUE-Hair.png';
+import fueTransplantImg from '../assets/Untitled-design-2025-07-14T110348.203-1.png';
+import basicTransplantImg from '../assets/Hair-Transplant.png';
+import percutaneousFueImg from '../assets/Percutaneous-FUE-1-1.png';
+import basicThinPolyDetailImg from '../assets/Basic-Thin-Poly.png';
+import celebrityChoiceImg from '../assets/Celebrity-Choice.png';
+import celebrityMirageImg from '../assets/Celebrity-Choice-Mirage-Hair-System.png';
+import fullLaceImg from '../assets/Full-Lace-hair-system-1.png';
+import menFullCapImg from '../assets/Men-Full-Cap.png';
+import womenFullCapImg from '../assets/women-Full-Cap.png';
+import scalpMicropigImg from '../assets/Scalp-Micropigmentation.png';
+import partialAlopeciaImg from '../assets/PARTIAL-ALOPECIA.png';
+import totalAlopeciaImg from '../assets/Total-Alopecia.png';
+import microbladingImg from '../assets/Microblading.png';
+import lipMicropigImg from '../assets/Lip-Micropigmentation.png';
+import eyelashImg from '../assets/Eyelash.png';
+import prpProImg from '../assets/IMG_1065-1024x683-1.png';
+import gelPrpImg from '../assets/IMG_1065-1024x683-1-1.png';
+import regenProImg from '../assets/IMG_1077-1024x683-1.png';
 // Hair Treatments Data - Content from reference website
 export const hairTreatmentsData = {
     // RESTORATION
     'nano-fue': {
         title: 'NANO FUE Hair Transplant',
+        image: nanoFueImg,
         whatIsTitle: 'What is NANO FUE?',
         whatIs: 'NANO FUE (Nano Follicular Unit Extraction) is the most advanced version of traditional FUE, using ultra-fine micro punches (0.6mm–0.7mm) to extract individual hair follicles with minimal trauma and maximum precision. This technique ensures higher follicle survival, no visible scarring, faster healing, and natural, dense hairlines. At AdGro Hair Clinic, Nagercoil, we specialize in NANO FUE using cutting-edge tools and techniques for clients seeking flawless results with minimal downtime.',
         howItWorksTitle: 'How Does NANO FUE Work?',
@@ -32,6 +54,7 @@ export const hairTreatmentsData = {
 
     'fue-hair-transplant': {
         title: 'FUE Hair Transplant',
+        image: fueTransplantImg,
         whatIsTitle: 'What is FUE Hair Transplant?',
         whatIs: 'FUE (Follicular Unit Extraction) is a modern, minimally invasive hair restoration technique where individual hair follicles are extracted from a donor area (usually the back of the head) and implanted into areas experiencing thinning or baldness. At AdGro Hair Clinic, Nagercoil, we use advanced FUE techniques to ensure natural-looking results, quick healing, and no visible scars. Each Follicles is placed with precision, respecting the direction, angle, and density of your natural hair growth.',
         howItWorksTitle: 'Step-by-Step Procedure at AdGro',
@@ -53,6 +76,7 @@ export const hairTreatmentsData = {
 
     'basic-hair-transplant': {
         title: 'Basic FUE Hair Transplant',
+        image: basicTransplantImg,
         whatIsTitle: 'What Exactly is Basic FUE Hair Transplant?',
         whatIs: 'Follicular Unit Extraction (FUE) is an advanced, minimally painful hair transplant technique that permanently restores hair. Healthy follicles are taken from the back and sides of the scalp and implanted into thinning or bald areas like the hairline or crown. By matching natural hair angle and density, FUE delivers natural-looking results with minimal downtime at a cost-effective level.',
         howItWorksTitle: 'How Does Basic FUE Hair Transplant Work?',
@@ -84,6 +108,7 @@ export const hairTreatmentsData = {
 
     'percutaneous-fue': {
         title: 'Percutaneous FUE Hair Transplant',
+        image: percutaneousFueImg,
         whatIsTitle: 'What Exactly is Percutaneous FUE?',
         whatIs: 'Percutaneous Follicular Unit Extraction or FUE is the most advanced and state-of-the-art technique of hair transplantation at present. In contrast to the conventional FUE, it utilises pinpoint micromotors and ultra-thin punches (even 0.7–0.8 mm diameter) to isolate and harvest hair follicles individually with less trauma and accuracy to the scalp than traditional FUE. The difference with this process is the ability to control depth, direction, and density of follicle implantation at implantation that leads to extremely natural, dense and permanent outcomes.',
         howItWorksTitle: 'How Does Percutaneous FUE Work?',
@@ -114,6 +139,7 @@ export const hairTreatmentsData = {
     // REPLACEMENT
     'basic-thin-poly': {
         title: 'Basic Thin Poly',
+        image: basicThinPolyDetailImg,
         whatIsTitle: 'What Exactly Is Basic Thin Poly?',
         whatIs: "Basic Thin Poly is a modern system of hair replacement that aims to provide a discreet, unrecognizable solution to people with thinning or balding hair. It has an ultra-thin polymer base which mimics the natural appearance of the scalp and is barely distinguishable after applying it. Whether you wish to regain confidence, look fuller, or simply want a non-surgical option that blends perfectly with your own hair—Basic Thin Poly offers a comfortable, long-lasting, and completely natural result.",
         howItWorksTitle: 'How Does Basic Thin Poly Work?',
@@ -136,6 +162,7 @@ export const hairTreatmentsData = {
 
     'celebrity-choice': {
         title: 'Celebrity Choice',
+        image: celebrityChoiceImg,
         whatIsTitle: 'What Exactly Is Celebrity Choice?',
         whatIs: "Celebrity Choice is AdGroHair's best, non-surgical hair rebuilding system—crafting only the best in realism, flexibility, and comfort. Its revolutionary solution provides the newest technology with masterful artistry to produce a hairline so natural, it's hardly detectable. No matter if you prefer a lace front, thin skin, or mono base, each system is tailor-made for your scalp, style, and lifestyle, providing you with the confidence and freedom to wear your hair your way.",
         howItWorksTitle: 'How Does Celebrity Choice Work?',
@@ -166,6 +193,7 @@ export const hairTreatmentsData = {
 
     'celebrity-choice-mirage': {
         title: 'Celebrity Choice Mirage',
+        image: celebrityMirageImg,
         whatIsTitle: 'What Exactly Is the Celebrity Choice Mirage Hair System?',
         whatIs: "Celebrity Choice Mirage Hair System is a revolutionary non-surgical hair replacement system that provides unparalleled realism with a hairline so natural, it's almost invisible. Originally a Hollywood and Bollywood A-list secret, this ultra-luxurious system has a meticulously designed lace base that perfectly blends into your scalp — with an incredibly light and unnoticeable finish. Whether you have premature thinning hair or end-stage hair loss, the Mirage system will assist in restoring confidence with comfort as well as with style.",
         howItWorksTitle: 'How Does the Celebrity Choice Mirage Hair System Work?',
@@ -194,6 +222,7 @@ export const hairTreatmentsData = {
 
     'full-lace': {
         title: 'Full Lace Hair System',
+        image: fullLaceImg,
         whatIsTitle: 'What Exactly Is a Full Lace Hair System?',
         whatIs: "Full Lace Hair System is a non-surgical, premium hair replacement system that offers natural hair. Composed of all lace, the system offers a light, airy base that is perfectly suitable for your scalp. The system's design offers a completely undetectable hairline, which offers the impression of natural, real hair growth. The system is constructed to your hairstyle and scalp for ultimate comfort and perfect look. Perfect for someone wanting a superior-quality, non-invasive hair regrowth treatment, the Full Lace Hair System boasts ultimate realism.",
         howItWorksTitle: 'How Does a Full Lace Hair System Work?',
@@ -221,6 +250,7 @@ export const hairTreatmentsData = {
 
     'men-full-cap': {
         title: 'Men Full Cap',
+        image: menFullCapImg,
         whatIsTitle: 'What Exactly Is Men Full Cap?',
         whatIs: 'Men Full Cap is a non-surgical, custom hair replacement system for men experiencing complete hair loss from alopecia, chemotherapy, or other causes. It provides a full, natural-looking head of hair, seamlessly blending with your own, offering a comfortable, surgery-free solution for a youthful, fuller appearance.',
         howItWorksTitle: 'How Does Men Full Cap Work?',
@@ -249,6 +279,7 @@ export const hairTreatmentsData = {
 
     'women-full-cap': {
         title: 'Women Full Cap System',
+        image: womenFullCapImg,
         whatIsTitle: 'What Exactly Is the Women Full Cap System?',
         whatIs: "Women Full Cap System is a personalized, medical-quality hair replacement system intended for females experiencing complete to severe hair loss. Whether induced by Alopecia Universalis, Alopecia Totalis, or due to chemotherapy-related hair loss, this full-cap system is tailor-fitted specifically to your own individual shape of scalp. The end result? A natural, unnoticeable finish with complete scalp coverage and endless styling possibilities—so you feel like you once again.",
         howItWorksTitle: 'How Does the Women Full Cap System Work?',
@@ -278,6 +309,7 @@ export const hairTreatmentsData = {
     // SPECIALTY
     'scalp-micropigmentation': {
         title: 'Scalp Micropigmentation',
+        image: scalpMicropigImg,
         whatIsTitle: 'What Exactly is Scalp Micropigmentation?',
         whatIs: 'Scalp Micropigmentation (SMP) in Nagercoil is a painless cosmetic treatment that creates the appearance of fuller hair for thinning hair, alopecia, or pattern baldness in men and women. SMP uses tiny pigment dots to mimic hair follicles, enhancing hair density and defining the hairline. At AdGro, our experts customize pigment tone and design for the most natural results.',
         howItWorksTitle: 'How Does Scalp Micropigmentation Work?',
@@ -307,6 +339,7 @@ export const hairTreatmentsData = {
 
     'partial-alopecia': {
         title: 'Partial Alopecia Treatment',
+        image: partialAlopeciaImg,
         whatIsTitle: 'What is Partial Alopecia Treatment?',
         whatIs: 'At Advanced Grohair Clinic, Nagercoil, we treat alopecia areata, which causes sudden hair loss in patches on the scalp, beard, or brows. Early, personalized, non-surgical treatments can stop further loss, reactivate follicles, and improve hair quality.',
         howItWorksTitle: 'How Does Partial Alopecia Treatment Work?',
@@ -330,6 +363,7 @@ export const hairTreatmentsData = {
 
     'total-alopecia': {
         title: 'Total Alopecia Treatment',
+        image: totalAlopeciaImg,
         whatIsTitle: 'What is Total Alopecia Treatment?',
         whatIs: "At AdGro, Nagercoil, we believe complete hair loss is not the end of your journey. Alopecia Totalis, a severe form of alopecia areata, causes full scalp hair loss, often due to autoimmune issues, stress, thyroid disease, or other conditions. It can progress rapidly and be emotionally difficult, but early treatment offers hope for regrowth. Our approach focuses on each patient's unique experience. We provide evidence-based, non-surgical treatments to stop hair loss, activate dormant follicles, and restore scalp health. Early diagnosis increases the chances of visible results.",
         howItWorksTitle: 'How Does Total Alopecia Treatment Work?',
@@ -353,6 +387,7 @@ export const hairTreatmentsData = {
 
     'microblading': {
         title: 'Microblading',
+        image: microbladingImg,
         whatIsTitle: 'What is Microblading?',
         whatIs: 'Microblading is a semi-permanent cosmetics tattoo technique to shape and define the brows. The treatment deposits pigment in outer skin layers using a thin, handheld blade. The most recent technology injects micro hairline strokes that perfectly match the natural eyebrow hair texture to create fuller appearing, more defined brows. This treatment is most suited for individuals that prefer a long-lasting solution to thin or asymmetrical brows as opposed to the makeup process daily.',
         howItWorksTitle: 'How the Microblading Process Works?',
@@ -380,6 +415,7 @@ export const hairTreatmentsData = {
 
     'lip-micropigmentation': {
         title: 'Lip Micropigmentation',
+        image: lipMicropigImg,
         whatIsTitle: 'What Exactly Is Lip Micropigmentation?',
         whatIs: 'Lip Micropigmentation is a semi-permanent cosmetic procedure that enhances natural lip color, shape, and symmetry by implanting pigment into the upper skin layer. It creates defined, fuller-looking lips without daily lipstick. Ideal for correcting uneven pigmentation, restoring faded color, or achieving youthful, natural lips, it also helps conceal scars or discoloration. Unlike traditional makeup, it offers a long-lasting, safe, and effective solution.',
         howItWorksTitle: 'How Does Lip Micropigmentation Work?',
@@ -407,6 +443,7 @@ export const hairTreatmentsData = {
 
     'eyelash-lift': {
         title: 'Eyelash Lift & Extensions',
+        image: eyelashImg,
         whatIsTitle: 'What is Eyelash Lift and Extensions?',
         whatIs: 'At AdGro, we blend precise lash styling with medical-grade safety for a refreshed eye look. An eyelash lift curls and lifts your natural lashes for a longer, open-eyed appearance without falsies, giving immediate, natural results. Eyelash extensions add thin natural or synthetic lashes individually, creating length, fullness, and a smooth, dramatic finish.',
         howItWorksTitle: 'How the Process Works?',
@@ -435,6 +472,7 @@ export const hairTreatmentsData = {
     // RETENTION
     'mesotherapy': {
         title: 'Mesotherapy',
+        image: hydrafacial2Img,
         whatIsTitle: 'What is Mesotherapy?',
         whatIs: 'Mesotherapy is a novel topical hair regenerating therapy that is used in pain-free hair restoration therapy. With mesotherapy, a special combination of vitamins, minerals, amino acids, and growth factors is injected into the scalp to promote hair root growth, stimulate the scalp with increased blood supply, and provide nutrition to the hair root. This therapy is especially great for people who have thinning hair, hair loss, and even hair loss at an early age. Pillowsing attacks the underlying causes of hair loss, while also creating the dormant follicles and initiating the natural process of regrowth of denser and healthier hair.',
         howItWorksTitle: 'How Does Mesotherapy Work?',
@@ -463,6 +501,7 @@ export const hairTreatmentsData = {
 
     'prp-pro-x27': {
         title: 'PRP Pro+ Stem X27',
+        image: prpProImg,
         whatIsTitle: 'What Exactly is PRP Pro+ for Hair?',
         whatIs: "PRP Pro+ (Platelet-Rich Plasma Therapy) is a non-drug, advanced treatment that uses the body's natural ability to fight baldness and boost growth. A small blood sample is processed in a centrifuge to extract platelet-rich plasma, rich in growth factors and proteins, which is then injected into thinning areas of the scalp. This stimulates healing, regenerates follicles, and reactivates dormant ones, making PRP Pro+ a safe, natural, and minimally invasive hair restoration option for both men and women.",
         howItWorksTitle: 'How Does PRP Pro+ for Hair Work?',
@@ -493,6 +532,7 @@ export const hairTreatmentsData = {
 
     'gel-prp': {
         title: 'Gel PRP',
+        image: gelPrpImg,
         whatIsTitle: 'What is Gel PRP?',
         whatIs: "Gel PRP is an advanced form of Platelet-Rich Plasma therapy, processed into a gel for improved application and results. It accelerates tissue repair, stimulates collagen, and strengthens hair follicles via slow-release growth factors. Activated with thrombin, it forms a fibrin matrix that supports sustained growth factor release and cellular regeneration. This promotes healing, hair follicle regeneration, and reactivates dormant follicles, naturally triggering hair growth. PRP Pro+ is a safe, minimally invasive, all-natural option for men and women.",
         howItWorksTitle: 'How It Works:',
@@ -513,6 +553,7 @@ export const hairTreatmentsData = {
 
     'regen-pro-9': {
         title: 'Regen Pro 9',
+        image: regenProImg,
         whatIsTitle: 'What is Regen Pro 9?',
         whatIs: "Regen Pro 9 is an advanced hair restoration kit that naturally revitalizes hair, activates dormant follicles, reduces hair loss, and enhances transplant results. Using growth factors from your blood and a fibrin matrix for sustained release, it promotes healing, follicle regeneration, and hair growth safely and minimally invasively for men and women.",
         howItWorksTitle: 'How It Works:',
@@ -534,6 +575,7 @@ export const hairTreatmentsData = {
     // NON-INVASIVE
     'oxygen-laser-therapy': {
         title: 'Oxygen Laser Therapy',
+        image: oxygenLaserTherapyImg,
         whatIsTitle: 'What is Oxygen Laser Therapy?',
         whatIs: 'Oxygen Laser Therapy in Nagercoil is an advanced, non-invasive hair restoration treatment combining Low Level Laser Therapy (LLLT) with oxygenation to improve scalp health and stimulate natural growth. By boosting circulation, delivering nutrients, and reducing inflammation—a key cause of thinning—it reactivates dormant follicles. This painless, gentle, non-surgical therapy is among the safest and most effective options for thinning or early hair loss, helping restore denser, healthier hair.',
         howItWorksTitle: 'How Does Oxygen Laser Therapy Work?',

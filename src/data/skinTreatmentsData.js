@@ -1,9 +1,25 @@
+import skinPeelsImg from '../assets/Skin-Peels.png';
+import fullBodyPeelImg from '../assets/Full-Body-Peel.png';
+import microdermabrasionImg from '../assets/Microdermabrasion.png';
+import qSwitchedImg from '../assets/Q-SWITCHED-LASER-THERAPY.png';
+import mnrfImg from '../assets/Microneedling-Radiofrequency-1.png';
+import rfFacialsImg from '../assets/RF-Facials.png';
+import botoxImg from '../assets/Botox.png';
+import dermalFillersImg from '../assets/Dermal-Fillers.png';
+import facePrpImg from '../assets/Face-prp-1.png';
+import threadLiftImg from '../assets/Thread-Lift-1.png';
+import ndYagImg from '../assets/ND_YAG-LASER.png';
+import diodeLaserImg from '../assets/DIODE-LASER-REMOVAL.png';
+import laserHairImg from '../assets/Adgro-Hair-1.png';
+import hydrafacialImg from '../assets/Hydrafacial.png';
+import glutathioneImg from '../assets/Adgro-Hair-1-2.png';
 // Skin Treatments Data - Content from reference website
 
 export const skinTreatmentsData = {
     // BRIGHTENING & PIGMENTATION
     'skin-peels': {
         title: 'Skin Peels',
+        image: skinPeelsImg,
         whatIsTitle: 'What Are Skin Peels?',
         whatIs: "Chemical peels gently remove outer skin layers to boost cell renewal, improving texture, tone, and brightness. They address acne, discoloration, fine lines, and dullness, offering natural, long-lasting results with minimal downtime.",
         howItWorksTitle: 'How Do Skin Peels Work?',
@@ -37,6 +53,7 @@ export const skinTreatmentsData = {
 
     'full-body-peel': {
         title: 'Full Body Peel',
+        image: fullBodyPeelImg,
         whatIsTitle: 'What is a Full Body Peel?',
         whatIs: "A Full Body Peel is an advanced exfoliating treatment that rejuvenates the skin across your entire body by removing dead skin cells, improving texture, and restoring a brighter, smoother appearance. This treatment uses specially formulated chemical solutions—customised to your skin type—to target pigmentation, tanning, rough patches, keratosis, or uneven skin tone. It's ideal for people seeking overall skin glow, tan removal, softening of rough areas, and improved skin clarity—especially on areas like the back, arms, legs, and chest.",
         howItWorksTitle: 'How Does the Procedure Work?',
@@ -66,6 +83,7 @@ export const skinTreatmentsData = {
 
     'microdermabrasion': {
         title: 'Microdermabrasion',
+        image: microdermabrasionImg,
         whatIsTitle: 'What Exactly Is Microdermabrasion?',
         whatIs: "Microdermabrasion also falls under non-surgical cosmetic dermatology specifically used to remove dead skin in a procedure that uses an advanced machine that smoothens the surface of the skin. The treatment activates new, healthier cells to emerge and encourages collagen production, resulting in a brighter, more radiant complexion. Microdermabrasion is a great treatment for acne scarring, uneven skin color and dull skin tone, and is a painless and effective form of rejuvenation with no downtime.",
         howItWorksTitle: 'How Does Microdermabrasion Work?',
@@ -93,6 +111,7 @@ export const skinTreatmentsData = {
 
     'q-switched-laser': {
         title: 'Q-Switched Laser Therapy',
+        image: qSwitchedImg,
         whatIsTitle: 'What Exactly is Q-Switched Laser Therapy?',
         whatIs: "Q-Switched Laser Therapy is a blistleptic treatment utilized to heal skin diseases, including pigment disease, melasma, and sunlight spots and tattoos. High-intensity light trains which kill the melanin without killing the tissue skin by them are used during the therapy. It not only removes skin marks, but it will also stimulate collagen, tightening skin texture and increasing the elasticity. It's also one of the most sought-after treatments for ridding you of pores, lines, wrinkles and acne marks.",
         howItWorksTitle: 'How Does Q-Switched Laser Therapy Work?',
@@ -120,6 +139,7 @@ export const skinTreatmentsData = {
 
     'mnrf-treatment': {
         title: 'MNRF Treatment',
+        image: mnrfImg,
         whatIsTitle: 'What is an MNRF Treatment?',
         whatIs: "MNRF Treatment is a breakthrough, non-surgical treatment designed to improve skin texture, firmness, scars, and pigmentation. It combines the benefits of microneedling with radiofrequency (RF) energy to stimulate collagen from deep within the skin—giving you a naturally lifted, smooth, and youthful appearance. This minimally invasive procedure is ideal for people dealing with acne scars, stretch marks, sagging skin, fine lines, large pores, and hyperpigmentation—all with minimal downtime.",
         howItWorksTitle: 'How Does the MNRF Procedure Work?',
@@ -149,6 +169,7 @@ export const skinTreatmentsData = {
     // AGELESS
     'rf-facials': {
         title: 'RF Facials',
+        image: rfFacialsImg,
         whatIsTitle: 'What Exactly Are RF Facials?',
         whatIs: "RF Facials (Radio Frequency Facials) use 4.0 MHz radio frequency technology to treat skin imperfections like moles, warts, skin tags, freckles, and DPNs, while tightening the skin. The minimally invasive procedure causes minimal blood loss and heat, preserving surrounding tissue. It smooths and tightens skin, enhances cosmetic appearance, and provides a youthful look with little to no pain and minimal downtime, making it ideal for those seeking fast, effective results.",
         howItWorksTitle: 'Do RF Facials Work?',
@@ -176,6 +197,7 @@ export const skinTreatmentsData = {
 
     'botox': {
         title: 'Botox',
+        image: botoxImg,
         whatIsTitle: 'What Exactly Is Botox for Skin Rejuvenation?',
         whatIs: "Botox, a top non-surgical treatment, relaxes facial muscles to smooth frown, squint, and smile lines. Using trusted brands like Botox (Allergan) and Dysport (Galderma), it provides safe, natural-looking results that last 3–5 months, preventing new lines and giving a refreshed, youthful appearance.",
         howItWorksTitle: 'How Does Botox for Skin Rejuvenation Work?',
@@ -203,6 +225,7 @@ export const skinTreatmentsData = {
 
     'dermal-fillers': {
         title: 'Dermal Fillers',
+        image: dermalFillersImg,
         whatIsTitle: 'What Are Dermal Fillers?',
         whatIs: "Dermal fillers restore facial volume, smooth wrinkles, and subtly redefine contours. Made mainly of hyaluronic acid, they boost skin firmness and elasticity. Our experts use top-rated fillers like Juvederm and Restylane to achieve a refreshed, youthful appearance safely and effectively.",
         howItWorksTitle: 'How Do Dermal Fillers Work?',
@@ -230,6 +253,7 @@ export const skinTreatmentsData = {
 
     'face-prp': {
         title: 'Face PRP',
+        image: facePrpImg,
         whatIsTitle: 'What Is Face PRP?',
         whatIs: "Face PRP, or the \"Vampire Facial,\" is likely the most holistic and advanced skin renewal procedure on the market today. Instead of resorting to artificial chemicals or surgery, PRP takes advantage of the body's own healing ability. By drawing off a small vial of blood and filtering out its platelet-rich plasma, we can put back into your skin this concentrated factor of healing. The above is nothing less than a revolution—quicker collagen production, better skin texture, smoother finish, and healthy, radiant complexion that feels and looks like you, but better.",
         howItWorksTitle: 'How It Works: The Step-by-Step Process',
@@ -258,6 +282,7 @@ export const skinTreatmentsData = {
 
     'thread-lift': {
         title: 'Thread Lift',
+        image: threadLiftImg,
         whatIsTitle: 'What is a Thread Lift?',
         whatIs: "A Thread Lift is a modern, non-surgical anti-aging procedure designed to lift and tighten sagging skin using medically approved dissolvable threads. These threads are gently inserted beneath the skin to offer an instant lifting effect while naturally boosting collagen production for long-term rejuvenation. Ideal for improving the appearance of the cheeks, jawline, eyebrows, and neck, this minimally invasive treatment helps redefine facial contours without the need for cuts, stitches, or extended downtime.",
         howItWorksTitle: 'How Does the Procedure Work?',
@@ -288,6 +313,7 @@ export const skinTreatmentsData = {
     // HAIR REDUCTION
     'nd-yag-laser': {
         title: 'Nd:YAG Laser',
+        image: ndYagImg,
         whatIsTitle: 'What Exactly is Nd:YAG Laser Hair Removal?',
         whatIs: "Nd:YAG Laser Hair Reduction is a safe, clinically proven treatment for efficiently reducing unwanted hair. Its 1064 nm laser targets follicles deeply without harming surrounding tissue and works on all skin types, including darker tones. Best for thick, dark hair, it offers permanent results with no pain or downtime.",
         howItWorksTitle: 'How Does Nd:YAG Laser Hair Removal Work?',
@@ -314,6 +340,7 @@ export const skinTreatmentsData = {
 
     'diode-laser': {
         title: 'Diode Laser',
+        image: diodeLaserImg,
         whatIsTitle: 'What Exactly Is Diode Laser Hair Removal?',
         whatIs: "Diode Laser Hair Removal is an advanced, effective method for permanent hair reduction. It targets melanin in hair follicles, converting light to heat to destroy them while protecting the skin. Integrated cooling ensures a safe, comfortable treatment for all skin types, resulting in long-term hair reduction.",
         howItWorksTitle: 'How Does Diode Laser Hair Removal Work?',
@@ -341,6 +368,7 @@ export const skinTreatmentsData = {
 
     'laser-hair-reduction': {
         title: 'Laser Hair Reduction',
+        image: laserHairImg,
         whatIsTitle: 'What is Laser Hair Reduction?',
         whatIs: "Laser Hair Reduction is a clinically validated method that targets the hair follicle at its root while preserving the integrity of your skin. We use USFDA-approved Diode and Nd:YAG laser systems, designed specifically to suit Indian skin tones and hair textures. Through a series of precisely administered sessions, we help you achieve long-term hair reduction with minimal discomfort, no downtime, and visible results.",
         howItWorksTitle: 'How Laser Hair Reduction Works?',
@@ -369,6 +397,7 @@ export const skinTreatmentsData = {
     // DRY & DULL SKIN
     'hydrafacial': {
         title: 'HydraFacial',
+        image: hydrafacialImg,
         whatIsTitle: 'What Is HydraFacial All About?',
         whatIs: "HydraFacial is a patented treatment that delivers an instant glow without chemicals or downtime. Using vortex-suction, it removes impurities while infusing antioxidant-rich serum, leaving skin refreshed and revitalized. Unlike traditional facials, it suits all skin types and provides visible, measurable results.",
         howItWorksTitle: 'How Does HydraFacial Work?',
@@ -398,6 +427,7 @@ export const skinTreatmentsData = {
     // IV THERAPY
     'glutathione-iv': {
         title: 'Glutathione IV Therapy',
+        image: glutathioneImg,
         whatIsTitle: 'What is IV Glutathione Therapy?',
         whatIs: "Glutathione, the body's master antioxidant, detoxifies cells, reduces oxidative stress, boosts immunity, and regulates melanin. Through IV therapy, it bypasses digestion for direct absorption, enhancing skin clarity, liver health, and overall vitality. IV Glutathione Therapy is a clinically supervised wellness treatment—not a fairness solution—designed to help you look and feel refreshed from within.",
         howItWorksTitle: 'What to Expect During Treatment?',

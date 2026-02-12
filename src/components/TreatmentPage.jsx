@@ -13,6 +13,11 @@ const TreatmentPage = ({ treatment }) => {
                         <span>Back to Home</span>
                     </Link>
                     <h1 className="treatment-page__title">{treatment.title}</h1>
+                    {treatment.image && (
+                        <div className="treatment-page__hero-image">
+                            <img src={treatment.image} alt={treatment.title} loading="lazy" />
+                        </div>
+                    )}
                 </div>
             </div>
 

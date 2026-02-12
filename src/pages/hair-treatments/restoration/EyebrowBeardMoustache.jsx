@@ -1,8 +1,12 @@
+import eyebrowImg from '../../../assets/Eyebrow-Transplant.png';
+import beardImg from '../../../assets/BEARD-TRANSPLANT.png';
+import moustacheImg from '../../../assets/2e76c5727095ff6774527c8a4cd81c81.jpg';
+
 const EyebrowBeardMoustache = () => {
     const treatments = [
-        { name: 'Eyebrow Transplant', description: 'Restore natural eyebrow shape and density for a more defined look.' },
-        { name: 'Beard Transplant', description: 'Achieve a fuller, natural-looking beard with permanent results.' },
-        { name: 'Moustache Transplant', description: 'Precision transplant for a complete, well-defined moustache.' },
+        { name: 'Eyebrow Transplant', description: 'Restore natural eyebrow shape and density for a more defined look.', image: eyebrowImg },
+        { name: 'Beard Transplant', description: 'Achieve a fuller, natural-looking beard with permanent results.', image: beardImg },
+        { name: 'Moustache Transplant', description: 'Precision transplant for a complete, well-defined moustache.', image: moustacheImg },
     ];
 
     return (
@@ -18,6 +22,9 @@ const EyebrowBeardMoustache = () => {
                 <div className="treatment-detail__grid">
                     {treatments.map((treatment) => (
                         <div key={treatment.name} className="treatment-detail__card">
+                            <div className="treatment-detail__card-image">
+                                <img src={treatment.image} alt={treatment.name} loading="lazy" style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center', borderRadius: '12px', marginBottom: '16px' }} />
+                            </div>
                             <h3>{treatment.name}</h3>
                             <p>{treatment.description}</p>
                             <a href="#contact" className="btn btn-outline">Learn More</a>
@@ -30,3 +37,4 @@ const EyebrowBeardMoustache = () => {
 };
 
 export default EyebrowBeardMoustache;
+

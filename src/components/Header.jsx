@@ -82,9 +82,9 @@ const Header = () => {
   };
 
   const navItems = [
+    { name: 'About', sectionId: 'about' },
     { name: 'Hair Treatments', sectionId: 'hair', hasDropdown: true, treatments: hairTreatments },
     { name: 'Skin Treatments', sectionId: 'skin', hasDropdown: true, treatments: skinTreatments },
-    { name: 'About', sectionId: 'about' },
     { name: 'Results', sectionId: 'results' },
     { name: 'Contact', sectionId: 'contact' },
   ];

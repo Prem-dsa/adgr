@@ -1,5 +1,14 @@
 // Hair Services Data - Matching reference website
-import hairTherapyImg from '../assets/MESOTHETITANIUM-FUE-Hair-TransplantRAPY-.png';
+import hairTherapyImg from '../assets/Hydrafacial-2.png';
+import restorationImg from '../assets/MESOTHETITANIUM-FUE-Hair-TransplantRAPY-.png';
+import specialtyImg from '../assets/PARTIAL-ALOPECIA.png';
+import basicThinPolyImg from '../assets/Basic-Thin-Poly.png';
+import oxygenLaserImg from '../assets/Oxygen-Laser-Therapy.png';
+import skinPeelsImg from '../assets/Skin-Peels.png';
+import ndYagLaserImg from '../assets/ND_YAG-LASER.png';
+import agelessImg from '../assets/a-client-receiving-a-facial-skincare-treatment.jpeg';
+import hydrafacialImg from '../assets/Hydrafacial.png';
+import ivTherapyImg from '../assets/Adgro-Hair-1-2.png';
 
 export const hairServices = [
     {
@@ -15,7 +24,7 @@ export const hairServices = [
         subtitle: 'Advanced Hair Transplant',
         description: 'Restore your natural hairline with our precision FUE techniques, delivering undetectable, permanent results.',
         treatments: ['Titanium FUE', 'Nano FUE', 'Percutaneous FUE', 'Beard Transplant'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/fue-hair-transplant-nagercoil.png',
+        image: restorationImg,
         categoryPath: '/hair-treatments/restoration'
     },
     {
@@ -23,7 +32,7 @@ export const hairServices = [
         subtitle: 'Specialized Treatments',
         description: 'Expert solutions for unique hair loss conditions including alopecia and specialized micropigmentation.',
         treatments: ['Scalp Micropigmentation', 'Alopecia Treatment', 'Microblading'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/beard-transplant-nagercoil.png',
+        image: specialtyImg,
         categoryPath: '/hair-treatments/specialty'
     },
     {
@@ -31,7 +40,7 @@ export const hairServices = [
         subtitle: 'Non-Surgical Solutions',
         description: 'Premium hair systems and cosmetic solutions for instant, natural-looking hair restoration.',
         treatments: ['Celebrity Choice', 'Full Lace', 'Basic Thin Poly'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/prp-treatment-nagercoil.png',
+        image: basicThinPolyImg,
         categoryPath: '/hair-treatments/replacement'
     },
     {
@@ -39,7 +48,7 @@ export const hairServices = [
         subtitle: 'Zero Downtime Solutions',
         description: 'Gentle yet effective treatments that require no surgery or recovery time.',
         treatments: ['Oxygen Laser Therapy', 'Low-Level Laser', 'Scalp Treatment'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/fue-hair-transplant-nagercoil.png',
+        image: oxygenLaserImg,
         categoryPath: '/hair-treatments/non-invasive'
     },
 ];
@@ -51,7 +60,7 @@ export const skinServices = [
         subtitle: 'Radiance Treatment',
         description: 'Achieve luminous, even-toned skin with our advanced brightening protocols and laser technologies.',
         treatments: ['Skin Peels', 'Q-Switched Laser', 'MNRF', 'Microdermabrasion'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/skin-brightening-nagercoil.png',
+        image: skinPeelsImg,
         categoryPath: '/skin-treatments/brightening'
     },
     {
@@ -59,7 +68,7 @@ export const skinServices = [
         subtitle: 'Laser Hair Removal',
         description: 'Safe and effective permanent hair reduction using FDA-approved laser technology.',
         treatments: ['Diode Laser', 'Nd:YAG Laser', 'Full Body Laser'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/laser-treatment-nagercoil.png',
+        image: ndYagLaserImg,
         categoryPath: '/skin-treatments/hair-reduction'
     },
     {
@@ -67,7 +76,7 @@ export const skinServices = [
         subtitle: 'Anti-Aging Treatments',
         description: 'Turn back the clock with precision injectables and lifting treatments for a naturally youthful appearance.',
         treatments: ['Botox', 'Dermal Fillers', 'Thread Lift', 'Face PRP'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/botox-treatment-nagercoil.png',
+        image: agelessImg,
         categoryPath: '/skin-treatments/ageless'
     },
     {
@@ -75,7 +84,7 @@ export const skinServices = [
         subtitle: 'Hydration Treatments',
         description: 'Revitalize dehydrated skin with deep hydration treatments for lasting moisture and glow.',
         treatments: ['Hydrafacial', 'Oxygen Facial', 'Moisturizing Therapy'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/skin-brightening-nagercoil.png',
+        image: hydrafacialImg,
         categoryPath: '/skin-treatments/dry-skin'
     },
     {
@@ -83,7 +92,7 @@ export const skinServices = [
         subtitle: 'Wellness Infusions',
         description: 'Experience powerful antioxidant therapy for skin brightening, detoxification, and overall wellness.',
         treatments: ['Glutathione IV', 'Vitamin C Drip', 'Wellness Infusion'],
-        image: 'https://adgronagercoil.com/wp-content/uploads/2024/10/skin-treatment-nagercoil.png',
+        image: ivTherapyImg,
         categoryPath: '/skin-treatments/iv-therapy'
     },
 ];

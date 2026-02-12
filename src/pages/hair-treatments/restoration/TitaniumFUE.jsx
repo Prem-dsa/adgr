@@ -1,3 +1,5 @@
+import titaniumFueImg from '../../../assets/MESOTHETITANIUM-FUE-Hair-TransplantRAPY-.png';
+
 const TitaniumFUE = () => {
     return (
         <section className="treatment-detail section">
@@ -8,6 +10,9 @@ const TitaniumFUE = () => {
                     <p className="treatment-detail__subtitle">
                         Premium hair transplant using titanium instruments for minimal trauma and faster healing.
                     </p>
+                    <div className="treatment-page__hero-image">
+                        <img src={titaniumFueImg} alt="Titanium FUE Hair Transplant" loading="lazy" />
+                    </div>
                 </div>
 
                 <div className="treatment-detail__content">
@@ -41,3 +46,4 @@ const TitaniumFUE = () => {
 };
 
 export default TitaniumFUE;
+

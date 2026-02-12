@@ -3,12 +3,12 @@
    ============================================ */
 .services {
     background: var(--color-white);
-    padding: var(--space-24) 0;
+    padding: var(--space-32) 0;
 }
 
 /* Category Sections */
 .services__category {
-    margin-bottom: var(--space-20);
+    margin-bottom: var(--space-24);
 }
 
 .services__category:last-child {
@@ -69,7 +69,7 @@
 .services__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-6);
+    gap: var(--space-8);
 }
 
 /* Service Card */
@@ -78,8 +78,8 @@
     border-radius: var(--radius-xl);
     overflow: hidden;
     position: relative;
-    border: 1px solid var(--color-light);
-    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    box-shadow: var(--shadow-soft);
     transition: all 0.5s var(--ease-out);
 
     /* Initial state - hidden */
@@ -131,7 +131,7 @@
 
 /* Card Content */
 .services__card-content {
-    padding: var(--space-5);
+    padding: var(--space-6);
 }
 
 .services__card-subtitle {
@@ -150,7 +150,7 @@
 
 .services__card:hover .services__card-subtitle {
     transform: scale(1.05);
-    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
+    box-shadow: 0 2px 8px rgba(185, 28, 28, 0.15);
 }
 
 .services__card-title {
@@ -231,7 +231,7 @@
 
 @media (max-width: 768px) {
     .services {
-        padding: var(--space-16) 0;
+        padding: var(--space-20) 0;
     }
 
     .services__category {
