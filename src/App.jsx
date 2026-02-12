@@ -80,6 +80,9 @@ import HydraFacial from './pages/skin-treatments/dry-skin/HydraFacial'
 // Skin Treatment Pages - IV Therapy
 import GlutathioneIV from './pages/skin-treatments/iv-therapy/GlutathioneIV'
 
+// Standalone Pages
+import AntigravityHero from './pages/AntigravityHero'
+
 // Home Page Component with scroll-to-section support
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -115,6 +118,21 @@ const HomePage = () => {
 }
 
 function App() {
+  const location = useLocation();
+  const standalonePages = ['/antigravity'];
+  const isStandalone = standalonePages.includes(location.pathname);
+
+  if (isStandalone) {
+    return (
+      <div className="app">
+        <ScrollToTop />
+        <Routes>
+          <Route path="/antigravity" element={<AntigravityHero />} />
+        </Routes>
+      </div>
+    );
+  }
+
   return (
     <div className="app">
       <ScrollToTop />
@@ -209,3 +227,4 @@ function App() {
 }
 
 export default App
+
