@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './Hero.css';
-import heroBanner from '../assets/website-banner-1-scaled.jpeg';
+import heroBanner from '../assets/ChatGPT Image Feb 13, 2026, 11_08_43 AM.png';
 
 const Hero = () => {
     const heroRef = useRef(null);

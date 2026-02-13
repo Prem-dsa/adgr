@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import AntigravityTestimonials from './AntigravityTestimonials';
+import BookConsultationModal from '../components/BookConsultationModal';
 import './AntigravityHero.css';
 
 const AntigravityHero = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const [particles, setParticles] = useState([]);
 
     useEffect(() => {
@@ -54,7 +57,7 @@ const AntigravityHero = () => {
                         <a href="#" className="ag-nav__link">Resources</a>
                     </div>
 
-                    <a href="#" className="ag-nav__cta">
+                    <a href="#" className="ag-nav__cta" onClick={() => setIsModalOpen(true)}>
                         Get Started
                         <span className="ag-nav__cta-glow" aria-hidden="true"></span>
                     </a>
@@ -105,7 +108,7 @@ const AntigravityHero = () => {
                         </p>
 
                         <div className="ag-hero__actions">
-                            <a href="#" className="ag-hero__btn-primary">
+                            <a href="#" className="ag-hero__btn-primary" onClick={() => setIsModalOpen(true)}>
                                 Start Investing Free
                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                     <path d="M5 12h14M12 5l7 7-7 7" />
@@ -134,6 +137,13 @@ const AntigravityHero = () => {
                     </div>
                 </div>
             </main>
+
+            <AntigravityTestimonials />
+
+            <BookConsultationModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+            />
         </div>
     );
 };

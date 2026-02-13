@@ -8,6 +8,8 @@ import Testimonials from './components/Testimonials'
 import BeforeAfter from './components/BeforeAfter'
 import FAQ from './components/FAQ'
 import CTA from './components/CTA'
+import ContactFormSection from './components/ContactFormSection'
+
 import Footer from './components/Footer'
 
 // Hair Treatment Category Index Pages
@@ -112,6 +114,7 @@ const HomePage = () => {
       <BeforeAfter />
       <Testimonials />
       <FAQ />
+      <ContactFormSection />
       <CTA />
     </>
   );

@@ -1,0 +1,388 @@
+/* ==============================================
+   BookConsultationModal — Antigravity Theme
+   Premium Dark Glassmorphism Modal
+   ============================================== */
+
+.bcm-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 5, 8, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 20px;
+}
+
+.bcm-overlay--open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bcm-container {
+    position: relative;
+    width: 100%;
+    max-width: 540px;
+    background: radial-gradient(circle at 50% 0%, rgba(15, 15, 25, 0.95), rgba(8, 8, 12, 0.98));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 48px 40px 40px;
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.6),
+        inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    transform: scale(0.95) translateY(20px);
+    transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: visible;
+}
+
+.bcm-container--open {
+    transform: scale(1) translateY(0);
+}
+
+/* --- Arc / Energy Ring --- */
+.bcm-arc-wrapper {
+    position: absolute;
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 120px;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.bcm-arc {
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    border-top-color: #ff3366;
+    /* Red Tone */
+    border-radius: 50%;
+    transform: rotateX(72deg);
+    animation: bcmArcSpin 10s linear infinite;
+    filter: drop-shadow(0 0 8px #ff3366) drop-shadow(0 0 4px #d946ef);
+}
+
+@keyframes bcmArcSpin {
+    from {
+        transform: rotateX(72deg) rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateX(72deg) rotateZ(360deg);
+    }
+}
+
+.bcm-arc-bloom {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 15%;
+    bottom: 0;
+    background: radial-gradient(ellipse at center, rgba(255, 51, 102, 0.15) 0%, transparent 70%);
+    filter: blur(20px);
+    animation: bcmBloom 3s ease-in-out infinite alternate;
+}
+
+.bcm-arc-plasma {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    height: 40%;
+    background: radial-gradient(ellipse at 50% 50%, rgba(217, 70, 239, 0.2) 0%, transparent 60%);
+    filter: blur(15px);
+    animation: bcmPlasma 5s ease-in-out infinite alternate;
+}
+
+@keyframes bcmBloom {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bcmPlasma {
+    0% {
+        opacity: 0.4;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0.8;
+        transform: translateY(-10px);
+    }
+}
+
+/* --- Close Button --- */
+.bcm-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.bcm-close:hover {
+    background: rgba(217, 70, 239, 0.2);
+    border-color: rgba(217, 70, 239, 0.4);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(217, 70, 239, 0.3);
+}
+
+.bcm-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* --- Header --- */
+.bcm-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.bcm-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.bcm-subtitle {
+    font-size: 0.9375rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* --- Form --- */
+.bcm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bcm-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.bcm-field {
+    position: relative;
+    width: 100%;
+}
+
+.bcm-field input,
+.bcm-field select {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 16px 18px;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bcm-field input:focus,
+.bcm-field select:focus {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(217, 70, 239, 0.4);
+    box-shadow:
+        0 0 0 4px rgba(217, 70, 239, 0.05),
+        inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.bcm-field label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9375rem;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bcm-field input:focus~label,
+.bcm-field input:not(:placeholder-shown)~label {
+    top: 0;
+    font-size: 0.75rem;
+    color: #d946ef;
+    background: #0d0d14;
+    /* Match modal bg */
+    padding: 0 6px;
+    transform: translateY(-50%) translateX(-4px);
+    font-weight: 600;
+}
+
+.bcm-field select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.bcm-label--select {
+    position: static !important;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.8125rem !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    transform: none !important;
+    font-weight: 500 !important;
+}
+
+/* --- Submit Button --- */
+.bcm-submit {
+    position: relative;
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    border: none;
+    background: linear-gradient(135deg, #ff3366, #ff0044);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    margin-top: 12px;
+    box-shadow: 0 8px 24px rgba(255, 51, 102, 0.3);
+}
+
+.bcm-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(255, 51, 102, 0.45);
+}
+
+.bcm-submit:active {
+    transform: translateY(0);
+}
+
+.bcm-submit-glow {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.bcm-submit:hover .bcm-submit-glow {
+    opacity: 1;
+}
+
+/* --- Decorations --- */
+.bcm-decor {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bcm-decor--1 {
+    width: 200px;
+    height: 200px;
+    top: -40px;
+    left: -40px;
+    background: rgba(217, 70, 239, 0.08);
+}
+
+.bcm-decor--2 {
+    width: 180px;
+    height: 180px;
+    bottom: -40px;
+    right: -40px;
+    background: rgba(255, 51, 102, 0.08);
+}
+
+/* --- Particles --- */
+.bcm-particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bcm-particle {
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: rgba(217, 70, 239, 0.4);
+    border-radius: 50%;
+    animation: bcmParticleFloat var(--dur) linear infinite;
+    animation-delay: var(--delay);
+    opacity: 0;
+}
+
+@keyframes bcmParticleFloat {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+/* --- Mobile Responsive --- */
+@media (max-width: 640px) {
+    .bcm-container {
+        padding: 40px 24px 32px;
+        border-radius: 20px;
+    }
+
+    .bcm-row {
+        grid-template-columns: 1fr;
+    }
+
+    .bcm-title {
+        font-size: 1.5rem;
+    }
+
+    .bcm-arc-wrapper {
+        width: 240px;
+        height: 90px;
+        top: -45px;
+    }
+
+    .bcm-close {
+        top: 16px;
+        right: 16px;
+    }
+}
