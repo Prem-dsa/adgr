@@ -120,7 +120,7 @@
 .services__card-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba(15, 23, 42, 0.5) 100%);
+    background: linear-gradient(180deg, transparent 60%, rgba(255, 255, 255, 0.4) 100%);
     pointer-events: none;
     transition: opacity 0.4s var(--ease-out);
 }

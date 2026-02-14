@@ -12,6 +12,15 @@ import ContactFormSection from './components/ContactFormSection'
 
 import Footer from './components/Footer'
 
+// New Standalone Pages
+import AboutPage from './pages/AboutPage'
+import ContactPage from './pages/ContactPage'
+import ResultsPage from './pages/ResultsPage'
+import TreatmentsPage from './pages/TreatmentsPage'
+import HairTreatmentsIndex from './pages/HairTreatmentsIndex'
+import SkinTreatmentsIndex from './pages/SkinTreatmentsIndex'
+import BookConsultationPage from './pages/BookConsultationPage'
+
 // Hair Treatment Category Index Pages
 import RestorationIndex from './pages/hair-treatments/restoration/index'
 import ReplacementIndex from './pages/hair-treatments/replacement/index'
@@ -85,27 +94,10 @@ import GlutathioneIV from './pages/skin-treatments/iv-therapy/GlutathioneIV'
 // Standalone Pages
 import AntigravityHero from './pages/AntigravityHero'
 
-// Home Page Component with scroll-to-section support
-import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
+// Home Page Component — no scroll logic, just renders home sections
 const HomePage = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Check if there's a scrollTo target from navigation
-    if (location.state?.scrollTo) {
-      // Small delay to ensure DOM is ready
-      const timer = setTimeout(() => {
-        const element = document.getElementById(location.state.scrollTo);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 50);
-      return () => clearTimeout(timer);
-    }
-  }, [location.state]);
-
   return (
     <>
       <Hero />
@@ -144,6 +136,17 @@ function App() {
         <Routes>
           {/* Home */}
           <Route path="/" element={<HomePage />} />
+
+          {/* Standalone Pages */}
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/results" element={<ResultsPage />} />
+          <Route path="/treatments" element={<TreatmentsPage />} />
+          <Route path="/book-consultation" element={<BookConsultationPage />} />
+
+          {/* Top-level Treatment Index Pages */}
+          <Route path="/hair-treatments" element={<HairTreatmentsIndex />} />
+          <Route path="/skin-treatments" element={<SkinTreatmentsIndex />} />
 
           {/* ============================================ */}
           {/* HAIR TREATMENTS                             */}
@@ -230,4 +233,3 @@ function App() {
 }
 
 export default App
-

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import logoImage from '../assets/NAGERCOIL-1-1-scaled.png';
 
@@ -5,19 +6,19 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const hairTreatments = [
-        'Restoration Plan',
-        'Retention Plan',
-        'Cosmetic Hair Replacement',
-        'Super Specialty',
-        'Non-Invasive Treatment',
+        { name: 'Restoration Plan', path: '/hair-treatments/restoration' },
+        { name: 'Retention Plan', path: '/hair-treatments/retention' },
+        { name: 'Cosmetic Hair Replacement', path: '/hair-treatments/replacement' },
+        { name: 'Super Specialty', path: '/hair-treatments/specialty' },
+        { name: 'Non-Invasive Treatment', path: '/hair-treatments/non-invasive' },
     ];
 
     const skinTreatments = [
-        'Skin Brightening & Pigmentation',
-        'Ageless Skin Treatments',
-        'Permanent Hair Reduction',
-        'Dry & Dull Skin Treatment',
-        'IV Therapy',
+        { name: 'Skin Brightening & Pigmentation', path: '/skin-treatments/brightening' },
+        { name: 'Ageless Skin Treatments', path: '/skin-treatments/ageless' },
+        { name: 'Permanent Hair Reduction', path: '/skin-treatments/hair-reduction' },
+        { name: 'Dry & Dull Skin Treatment', path: '/skin-treatments/dry-skin' },
+        { name: 'IV Therapy', path: '/skin-treatments/iv-therapy' },
     ];
 
     return (
@@ -61,8 +62,8 @@ const Footer = () => {
                             <h4 className="footer__column-title">Hair Treatments</h4>
                             <ul className="footer__links">
                                 {hairTreatments.map((treatment) => (
-                                    <li key={treatment}>
-                                        <a href="#hair" className="footer__link">{treatment}</a>
+                                    <li key={treatment.name}>
+                                        <Link to={treatment.path} className="footer__link">{treatment.name}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -73,8 +74,8 @@ const Footer = () => {
                             <h4 className="footer__column-title">Skin Treatments</h4>
                             <ul className="footer__links">
                                 {skinTreatments.map((treatment) => (
-                                    <li key={treatment}>
-                                        <a href="#skin" className="footer__link">{treatment}</a>
+                                    <li key={treatment.name}>
+                                        <Link to={treatment.path} className="footer__link">{treatment.name}</Link>
                                     </li>
                                 ))}
                             </ul>
@@ -84,10 +85,10 @@ const Footer = () => {
                         <div className="footer__column">
                             <h4 className="footer__column-title">Company</h4>
                             <ul className="footer__links">
-                                <li><a href="#about" className="footer__link">About Us</a></li>
-                                <li><a href="#results" className="footer__link">Results Gallery</a></li>
+                                <li><Link to="/about" className="footer__link">About Us</Link></li>
+                                <li><Link to="/results" className="footer__link">Results Gallery</Link></li>
                                 <li><a href="#" className="footer__link">Blog</a></li>
-                                <li><a href="#contact" className="footer__link">Contact</a></li>
+                                <li><Link to="/contact" className="footer__link">Contact</Link></li>
                                 <li><a href="#" className="footer__link">Privacy Policy</a></li>
                             </ul>
                         </div>

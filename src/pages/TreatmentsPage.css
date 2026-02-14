@@ -1,0 +1,222 @@
+/* ============================================ */
+/* Treatments Page                              */
+/* ============================================ */
+
+.treatments-page {
+    padding: 120px 0 80px;
+    background: #FFFFFF;
+    min-height: 100vh;
+}
+
+/* Hero Banner */
+.treatments-page__hero {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.treatments-page__eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.treatments-page__title {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.treatments-page__title em {
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+.treatments-page__subtitle {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Category Section */
+.treatments-page__section {
+    margin-bottom: 64px;
+}
+
+.treatments-page__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.treatments-page__section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-charcoal);
+}
+
+.treatments-page__section-title span {
+    color: var(--color-primary);
+}
+
+/* Cards Grid */
+.treatments-page__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 28px;
+}
+
+.treatments-page__card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.treatments-page__card:hover {
+    border-color: var(--color-primary-subtle);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.treatments-page__card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.treatments-page__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.treatments-page__card:hover .treatments-page__card-image img {
+    transform: scale(1.05);
+}
+
+.treatments-page__card-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.3) 100%);
+}
+
+.treatments-page__card-body {
+    padding: 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.treatments-page__card-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.treatments-page__card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 10px;
+}
+
+.treatments-page__card-desc {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.treatments-page__card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.treatments-page__card-tag {
+    font-size: 0.72rem;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--color-primary-subtle);
+    color: var(--color-primary);
+    border: 1px solid rgba(225, 29, 72, 0.1);
+    letter-spacing: 0.5px;
+}
+
+.treatments-page__card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: gap 0.3s ease;
+}
+
+.treatments-page__card-link:hover {
+    gap: 12px;
+    color: var(--color-primary-dark);
+}
+
+/* Divider */
+.treatments-page__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 64px;
+    position: relative;
+}
+
+.treatments-page__divider::before,
+.treatments-page__divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05), transparent);
+}
+
+.treatments-page__divider-text {
+    padding: 0 24px;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .treatments-page {
+        padding: 100px 0 60px;
+    }
+
+    .treatments-page__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .treatments-page__section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}

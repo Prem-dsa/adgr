@@ -4,7 +4,9 @@
 .cta {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-black) 100%);
+    background: var(--color-pearl);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Background */
@@ -22,7 +24,7 @@
     position: absolute;
     inset: 0;
     background-image:
-        radial-gradient(circle at 1px 1px, rgba(185, 28, 28, 0.06) 1px, transparent 0);
+        radial-gradient(circle at 1px 1px, rgba(225, 29, 72, 0.03) 1px, transparent 0);
     background-size: 32px 32px;
 }
 
@@ -33,7 +35,7 @@
     transform: translate(-50%, -50%);
     width: 600px;
     height: 400px;
-    background: radial-gradient(ellipse at center, rgba(185, 28, 28, 0.1) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, rgba(225, 29, 72, 0.05) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -53,12 +55,17 @@
 }
 
 .cta__eyebrow {
-    color: var(--color-primary-light) !important;
+    color: var(--color-primary) !important;
     padding: var(--space-2) var(--space-4);
-    background: rgba(185, 28, 28, 0.2);
+    background: var(--color-primary-subtle);
+    border: 1px solid rgba(225, 29, 72, 0.1);
     border-radius: var(--radius-full);
     display: inline-block;
     margin-bottom: var(--space-4);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75rem;
 }
 
 .cta__eyebrow::before,
@@ -70,20 +77,20 @@
     font-family: var(--font-display);
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-charcoal);
     margin-bottom: var(--space-4);
 }
 
 .cta__title em {
     font-style: normal;
-    color: var(--color-primary-light);
+    color: var(--color-primary);
     background: none;
-    -webkit-text-fill-color: var(--color-primary-light);
+    -webkit-text-fill-color: var(--color-primary);
 }
 
 .cta__description {
     font-size: var(--text-base);
-    color: var(--color-silver);
+    color: var(--color-gray);
     line-height: 1.7;
     margin-bottom: var(--space-6);
 }
@@ -107,18 +114,18 @@
 }
 
 .cta__card {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-2xl);
     padding: var(--space-8);
     transition: all var(--duration-base) var(--ease-out);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
 }
 
 .cta__card:hover {
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(185, 28, 28, 0.3);
+    border-color: rgba(225, 29, 72, 0.2);
     transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 .cta__card-icon {
@@ -137,13 +144,13 @@
     font-family: var(--font-display);
     font-size: var(--text-lg);
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-charcoal);
     margin-bottom: var(--space-2);
 }
 
 .cta__card-text {
     font-size: var(--text-sm);
-    color: var(--color-silver);
+    color: var(--color-gray);
     line-height: 1.7;
     margin: 0;
 }

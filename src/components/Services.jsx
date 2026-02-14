@@ -21,9 +21,9 @@ const Services = () => {
                                 World-class hair restoration solutions combining artistry with advanced medical technology.
                             </p>
                         </div>
-                        <a href="#contact" className="btn btn-outline services__header-cta">
+                        <Link to="/hair-treatments" className="btn btn-outline services__header-cta">
                             Explore All
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="services__grid">
@@ -51,9 +51,9 @@ const Services = () => {
                                 Premium skincare protocols designed to restore youthful vitality and natural luminosity.
                             </p>
                         </div>
-                        <a href="#contact" className="btn btn-outline services__header-cta">
+                        <Link to="/skin-treatments" className="btn btn-outline services__header-cta">
                             Explore All
-                        </a>
+                        </Link>
                     </div>
 
                     <div className="services__grid">

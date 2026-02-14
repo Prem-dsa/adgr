@@ -145,7 +145,7 @@ const ContactFormSection = () => {
                             </div>
 
                             <button type="submit" className="cfs__submit">
-                                Send Message
+                                Book Appointment
                                 <span className="cfs__submit-glow"></span>
                             </button>
                         </form>

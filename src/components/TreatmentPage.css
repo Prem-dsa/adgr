@@ -184,7 +184,8 @@
 .treatment-page__cta {
     text-align: center;
     padding: var(--space-12);
-    background: linear-gradient(135deg, var(--color-charcoal) 0%, var(--color-slate) 100%);
+    background: var(--color-pearl);
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: var(--radius-3xl);
     margin-top: var(--space-16);
 }
@@ -193,13 +194,13 @@
     font-family: var(--font-display);
     font-size: var(--text-2xl);
     font-weight: 700;
-    color: var(--color-white);
+    color: var(--color-charcoal);
     margin-bottom: var(--space-3);
 }
 
 .treatment-page__cta-text {
     font-size: var(--text-base);
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-gray);
     margin-bottom: var(--space-6);
 }
 

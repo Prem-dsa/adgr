@@ -2,7 +2,7 @@ import './CTA.css';
 
 const CTA = () => {
     return (
-        <section className="cta section" id="contact">
+        <section className="cta section">
             <div className="cta__background">
                 <div className="cta__bg-gradient"></div>
                 <div className="cta__bg-pattern"></div>

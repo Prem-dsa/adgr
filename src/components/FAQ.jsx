@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './FAQ.css';
 
 const FAQ = () => {
@@ -32,7 +33,7 @@ const FAQ = () => {
     };
 
     return (
-        <section className="faq section" id="about">
+        <section className="faq section">
             <div className="container">
                 <div className="faq__wrapper">
                     <div className="faq__content">
@@ -44,9 +45,9 @@ const FAQ = () => {
 
                         <div className="faq__contact">
                             <p className="faq__contact-text">Still have questions?</p>
-                            <a href="#contact" className="btn btn-primary">
+                            <Link to="/contact" className="btn btn-primary">
                                 Schedule a Consultation
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

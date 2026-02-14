@@ -1,0 +1,154 @@
+/* ============================================ */
+/* Book Consultation Page                       */
+/* ============================================ */
+
+.book-consultation-page {
+    background: #FFFFFF;
+    min-height: 100vh;
+}
+
+/* Hero Section */
+.book-consultation-page__hero {
+    position: relative;
+    padding: 140px 0 60px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.book-consultation-page__hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.book-consultation-page__hero-gradient {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(225, 29, 72, 0.05) 0%,
+            transparent 40%,
+            transparent 60%,
+            rgba(225, 29, 72, 0.03) 100%);
+}
+
+.book-consultation-page__hero-glow {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(225, 29, 72, 0.05) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.book-consultation-page__hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.book-consultation-page__eyebrow {
+    display: inline-block;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.book-consultation-page__title {
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--color-charcoal);
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.book-consultation-page__title em {
+    font-style: normal;
+    color: var(--color-primary);
+}
+
+.book-consultation-page__subtitle {
+    font-size: 1.1rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+/* Info Section */
+.book-consultation-page__info {
+    padding: 40px 0 80px;
+}
+
+.book-consultation-page__info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.book-consultation-page__info-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 36px 28px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.book-consultation-page__info-card:hover {
+    border-color: var(--color-primary-subtle);
+    transform: translateY(-4px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.book-consultation-page__info-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--color-primary-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--color-primary);
+}
+
+.book-consultation-page__info-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    margin-bottom: 10px;
+}
+
+.book-consultation-page__info-text {
+    font-size: 0.9rem;
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+.book-consultation-page__info-link {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.book-consultation-page__info-link:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .book-consultation-page__hero {
+        padding: 110px 0 40px;
+    }
+
+    .book-consultation-page__info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

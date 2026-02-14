@@ -37,8 +37,7 @@ const ContactHero = () => {
                     Reach out to us and we'll get back to you quickly.
                 </motion.p>
 
-                <motion.a
-                    href="#get-in-touch"
+                <motion.button
                     className="contact-hero__btn"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -46,9 +45,13 @@ const ContactHero = () => {
                     transition={{ duration: 0.8, delay: 0.6, ease: 'easeOut' }}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.97 }}
+                    onClick={() => {
+                        const el = document.getElementById('get-in-touch');
+                        if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }}
                 >
                     Contact Us
-                </motion.a>
+                </motion.button>
             </motion.div>
         </section>
     );

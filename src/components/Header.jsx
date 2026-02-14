@@ -82,28 +82,17 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: 'About', sectionId: 'about' },
-    { name: 'Hair Treatments', sectionId: 'hair', hasDropdown: true, treatments: hairTreatments },
-    { name: 'Skin Treatments', sectionId: 'skin', hasDropdown: true, treatments: skinTreatments },
-    { name: 'Results', sectionId: 'results' },
-    { name: 'Contact', sectionId: 'contact' },
+    { name: 'About', path: '/about' },
+    { name: 'Hair Treatments', path: '/hair-treatments', hasDropdown: true, treatments: hairTreatments },
+    { name: 'Skin Treatments', path: '/skin-treatments', hasDropdown: true, treatments: skinTreatments },
+    { name: 'Results', path: '/results' },
+    { name: 'Contact', path: '/contact' },
   ];
 
-  // Navigate to section - works from any page
-  const navigateToSection = (sectionId) => {
+  // Navigate to a page route
+  const navigateToPage = (path) => {
     closeMobileMenu();
-
-    if (location.pathname === '/') {
-      // Already on home page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // Navigate to home with state containing target section
-      // The scroll will be handled by a useEffect that watches for this state
-      navigate('/', { state: { scrollTo: sectionId } });
-    }
+    navigate(path);
   };
 
   const handleMobileDropdown = (itemName) => {
@@ -138,7 +127,6 @@ const Header = () => {
             src={logoImage}
             alt="Advanced GroHair & GloSkin"
             className="header__logo-img"
-            style={{ height: '100px', width: 'auto' }}
           />
         </Link>
 
@@ -198,7 +186,7 @@ const Header = () => {
                 ) : (
                   <button
                     className="header__nav-link"
-                    onClick={() => navigateToSection(item.sectionId)}
+                    onClick={() => navigateToPage(item.path)}
                   >
                     <span className="header__nav-link-text">{item.name}</span>
                     <span className="header__nav-link-line"></span>
@@ -210,7 +198,7 @@ const Header = () => {
 
           <button
             className="header__cta-mobile btn btn-primary"
-            onClick={() => navigateToSection('contact')}
+            onClick={() => navigateToPage('/book-consultation')}
           >
             Book Consultation
           </button>
@@ -218,7 +206,7 @@ const Header = () => {
 
         <button
           className="header__cta btn btn-primary"
-          onClick={() => navigateToSection('contact')}
+          onClick={() => navigateToPage('/book-consultation')}
         >
           <span>Book Consultation</span>
         </button>

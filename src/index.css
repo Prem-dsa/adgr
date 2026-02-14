@@ -9,23 +9,27 @@
    CSS Custom Properties (Design Tokens)
    ============================================ */
 :root {
-  /* Primary Accent - Brand Dark Red */
-  --color-primary: #B91C1C;
-  --color-primary-light: #DC2626;
-  --color-primary-dark: #991B1B;
-  --color-primary-subtle: #FEF2F2;
+  /* Primary Accent - Brand Red */
+  --color-primary: #E11D48;
+  --color-primary-light: #FB7185;
+  --color-primary-dark: #BE123C;
+  --color-primary-subtle: #FFF1F2;
 
   /* Neutrals - Clean & Clinical */
-  --color-black: #0f172a;
-  --color-charcoal: #1e293b;
-  --color-slate: #475569;
-  --color-gray: #64748b;
-  --color-silver: #94a3b8;
-  --color-muted: #cbd5e1;
-  --color-light: #e2e8f0;
-  --color-pearl: #f1f5f9;
-  --color-ivory: #f8fafc;
-  --color-white: #ffffff;
+  --color-black: #0F172A;
+  --color-charcoal: #1F2937;
+  /* Headings */
+  --color-slate: #4B5563;
+  /* Subheadings */
+  --color-gray: #6B7280;
+  /* Body Paragraphs */
+  --color-silver: #9CA3AF;
+  --color-muted: #D1D5DB;
+  --color-light: #E5E7EB;
+  --color-pearl: #F5F6F8;
+  /* Light Grey Section Background */
+  --color-ivory: #F9FAFB;
+  --color-white: #FFFFFF;
 
   /* Legacy aliases for compatibility */
   --color-gold: var(--color-primary);
@@ -375,19 +379,19 @@ p {
 }
 
 .section--dark {
-  background: var(--color-charcoal);
-  color: var(--color-pearl);
+  background: var(--color-pearl);
+  color: var(--color-charcoal);
 }
 
 .section--dark h1,
 .section--dark h2,
 .section--dark h3,
 .section--dark h4 {
-  color: var(--color-white);
+  color: var(--color-charcoal);
 }
 
 .section--dark p {
-  color: var(--color-silver);
+  color: var(--color-gray);
 }
 
 .section-header {
@@ -402,10 +406,10 @@ p {
   gap: var(--space-3);
   font-family: var(--font-body);
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-weight: 700;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-gold);
+  color: var(--color-primary);
   margin-bottom: var(--space-4);
 }
 
@@ -414,11 +418,11 @@ p {
   content: '';
   width: 40px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--color-gold));
+  background: linear-gradient(90deg, transparent, var(--color-primary));
 }
 
 .section-eyebrow::after {
-  background: linear-gradient(90deg, var(--color-gold), transparent);
+  background: linear-gradient(90deg, var(--color-primary), transparent);
 }
 
 .section-title {
@@ -716,7 +720,7 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--color-gold), var(--color-gold-dark));
+  background: var(--color-primary);
   border-radius: var(--radius-full);
 }
 
